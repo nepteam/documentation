@@ -18,6 +18,12 @@ final decision -- which can be changed over time.
 
 This additionally reflects everything about Eryri project.
 
+Contributors
+------------
+
+- Juti Noppornpitak (@shiroyuki)
+- Panote Siriaraya (@spanote)
+
 .. toctree::
    :maxdepth: 2
 
