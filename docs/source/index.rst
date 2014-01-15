@@ -6,9 +6,9 @@
 Eryri
 =====
 
-:status: active
-
 Eryri is an open-source development platform for collaborative educational software.
+
+:status: active
 
 .. toctree::
    :maxdepth: 2
