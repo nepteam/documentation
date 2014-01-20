@@ -7,6 +7,8 @@ The security is classified in two different levels: application and user.
 
 It is currently undetermined how we want to do this. However, one possible implementation is to use [the OAuth 2.0 Authorization Framework](http://oauth.net/2/) as specified in [RFC 6749](http://tools.ietf.org/html/rfc6749).
 
+.. contents::
+
 Application-level Security
 ==========================
 
