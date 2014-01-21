@@ -13,5 +13,6 @@ Prerequisite
 ============
 
 - RabbitMQ
+- Tori Framework / Tornado Framework (for WebSocket)
 
 More is TBD.
