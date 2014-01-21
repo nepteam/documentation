@@ -9,4 +9,9 @@ Messaging Service
         MessagingService -> Cache
     }
 
+Prerequisite
+============
+
+- RabbitMQ
+
 More is TBD.
