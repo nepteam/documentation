@@ -12,7 +12,13 @@ Messaging Service
 Prerequisite
 ============
 
-- RabbitMQ
+- Python*
 - Tori Framework / Tornado Framework (for WebSocket)
+- RabbitMQ
+.. - MySQL
+
+.. note::
+
+    ...
 
 More is TBD.
