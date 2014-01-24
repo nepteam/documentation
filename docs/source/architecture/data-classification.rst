@@ -38,6 +38,7 @@ It must have at least one *tags* for query, classification and fast access.
         tags # list<str>
         owner # security.User
         active # bool
+        collection # Collection
         started # float (unix timestamp)
         finished # float (unix timestamp)
         created # float (unix timestamp)
