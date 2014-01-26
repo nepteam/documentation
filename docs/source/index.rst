@@ -16,9 +16,10 @@ Eryri is an open-source development platform for collaborative educational softw
 
 .. toctree::
    :titlesonly:
-   :maxdepth: 2
+   :maxdepth: 5
 
    architecture/index
+   reference/index
 
 License
 =======

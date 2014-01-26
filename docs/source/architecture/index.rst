@@ -21,8 +21,10 @@ Notes:
 - The data store will be MySQL for user directory and either Riak or LevelDB for data and logs.
 
 .. toctree::
-   :glob:
    :titlesonly:
-   :maxdepth: 2
+   :maxdepth: 1
 
-   *
+   data-classification
+   security
+   messaging-service
+   web-service/index
