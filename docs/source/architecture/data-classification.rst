@@ -3,6 +3,38 @@ Data Classification
 
 .. contents:: Table of Contents
 
+.. note::
+
+    Property **created** and **updated** are not editable or manually defined.
+    **created** is **only** assigned automatically by the web service upon the
+    creation of entity. However, **updated** is **always** updated automatically
+    by the web service upon any updates of the entity.
+
+User class
+==========
+
+This represents the user. It is a security class.
+
+.. code-block:: python
+
+    class User:
+        name # str (unicode)
+        alias # str (alphanumeric only)
+        email # str
+        password # str
+        salt # str
+        created # float (unix timestamp)
+        updated # float (unix timestamp)
+
+.. note::
+
+    In the initial prototype phase, only **name**, **alias** and **email** are used.
+    
+.. warning::
+
+    Only *alias*, *email* and *salt* should be read-only after the user creation
+    (or registration).
+
 Ticket class
 ============
 
@@ -23,6 +55,10 @@ statistic data and the current set of responses at a certain time. In meanwhile,
         created # float (unix timestamp)
         updated # float (unix timestamp)
 
+.. note::
+
+    For the sake of data integrity, only **status** is changeable.
+
 Session class
 =============
 
@@ -37,7 +73,9 @@ It must have at least one *tags* for query, classification and fast access.
         name # str
         tags # list<str>
         owner # security.User
-        active # bool
+        end_reason # ENUM[None, 'done', 'postponed', 'cancelled', 'technical_difficulty']
+        is_active # bool
+        is_public # bool
         collection # Collection
         started # float (unix timestamp)
         finished # float (unix timestamp)
@@ -85,6 +123,11 @@ manipulation on this property should be reserved for emergency only.
 
     When the sequence has no options, the system will automatically determine
     that this sequence requires a written response, instead of multiple choices.
+
+.. note::
+
+    When the project exits the prototype phase, we will either extend this class
+    to support just a presentation data, questions, survey and test.
 
 Option class
 ============
